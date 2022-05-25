@@ -1,0 +1,41 @@
+*{
+    color: white;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+#navBar{
+    display: flex;
+    justify-content: space-around;
+
+}
+.btn-outline-success{
+    color: white;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+}
+.the{
+    font-size: 3vw;
+    transform: rotate(90deg);
+}
+.siren{
+    font-size: 4vw;
+}
+.contentPage{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card{
+    height: 30vw;
+    width: 20vw;
+    margin: 1vw;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin-top: 0vw;
+}

@@ -1,14 +1,33 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React ,{useContext} from 'react'
+import { home } from './APIs/ApiHome';
+
 
 const Home = () => {
+  const [dataHome, setDataHome] = useContext(home);
   return (
+
     <div>
-      <ul>
-          <Link to="/bollywood"><li>Bollywood</li></Link> 
-          <Link to="/technology"><li>Technology</li></Link>
-          <Link to="/travel"><li>Travel</li></Link>
-      </ul>
+      
+
+      <div className="contentPage">
+      
+      {dataHome.map((item) => {
+        return (
+        <a href={item.url}>
+            <div className="card">
+              <img src={item.urlToImage} alt="PopularImg" />
+              <p>{item.title}</p>
+              <p>{item.description}</p>
+              <p>{item.author}{item.publishedAt}</p>
+              <hr />
+            </div></a>
+        );
+      })}
+      </div>
+      <div className="right">
+        
+      </div>
+
     </div>
   )
 }
