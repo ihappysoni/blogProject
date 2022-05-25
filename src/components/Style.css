@@ -39,3 +39,27 @@ a{
 p{
     margin-top: 0vw;
 }
+@media(max-width:720px){
+    .contentPage{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .card{
+        height: 60vw;
+        width: 45vw;
+        margin: 1vw;
+        overflow: hidden;
+    }
+}
+@media(max-width:480px){
+    .contentPage{
+        display: block;
+    }
+    .card{
+        height: 90vw;
+        width: 90vw;
+        margin: 1vw;
+        overflow: hidden;
+    }
+}
+
